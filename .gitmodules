@@ -6,7 +6,7 @@
 	url = https://github.com/MineTopL/CmlLib.Core.git
 [submodule "src/Pingo"]
 	path = src/Pingo
-	url = https://github.com/MineTopL/Pingo.git
+	url = https://github.com/GamerVII-NET/Pingo.git
 [submodule "src/CmlLib.Core.Installer.NeoForge"]
 	path = src/CmlLib.Core.Installer.NeoForge
 	url = https://github.com/MineTopL/CmlLib.Core.Installer.NeoForge
