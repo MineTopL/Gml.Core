@@ -356,11 +356,11 @@ namespace Gml.Core.Helpers.Profiles
             var files =
                 await profile.GetProfileFiles(startupOptions.OsName, startupOptions.OsArch);
 
-            if (files.Any(c => c.Name == Path.GetFileName(AuthLibUrl)))
-            {
-                var authLibRelativePath = Path.Combine(profile.ClientPath, "libraries", "custom", Path.GetFileName(AuthLibUrl));
-                jvmArgs.Add($"-javaagent:{authLibRelativePath}={{authEndpoint}}");
-            }
+            // if (files.Any(c => c.Name == Path.GetFileName(AuthLibUrl)))
+            // {
+            //     var authLibRelativePath = Path.Combine(profile.ClientPath, "libraries", "custom", Path.GetFileName(AuthLibUrl));
+            //     jvmArgs.Add($"-javaagent:{authLibRelativePath}={{authEndpoint}}");
+            // }
 
             if (profile.GameArguments is not null)
                 gameArguments.AddRange(profile.GameArguments.Split(' '));
